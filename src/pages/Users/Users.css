@@ -22,3 +22,10 @@
 .user-profile-link h5{
     margin: 0px 10px;
 }
+
+@media screen and (max-width: 800px){
+    .user-list-container{
+        width: 100%;
+        height: 100%;
+    }
+}

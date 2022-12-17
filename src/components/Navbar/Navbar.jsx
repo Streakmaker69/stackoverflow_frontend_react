@@ -56,10 +56,10 @@ const Navbar = () => {
         </form>
         {User === null ?
             <Link to="/Auth" className="nav-item nav-links">Login</Link> :
-            <>
-                <Avatar backgroundColor="#009dff" px="10px" py="7px" borderRadius="50%"><Link to={`/Users/${User.message._id}`} style={{ color: "white", textDecoration: "none", fontFamily: "Arial"}}>{User.message.name.charAt(0).toUpperCase()}</Link></Avatar>
+            <div className="nav-item right-container">
+                <Avatar backgroundColor="#009dff" px="12px" py="8px" borderRadius="50%" fontSize="small"><Link to={`/Users/${User.message._id}`} style={{ color: "white", textDecoration: "none", fontFamily: "Arial"}}>{User.message.name.charAt(0).toUpperCase()}</Link></Avatar>
                 <button className="nav-item nav-links" onClick={handleLogout}>Log Out</button>
-            </>
+            </div>
         }
        </div>
     </nav>
