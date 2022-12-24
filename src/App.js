@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 
 import Navbar from './components/Navbar/Navbar'
 import AllRoutes from './AllRoutes';
+import KommunicateChat from './chat';
 
 import { fetchAllQuestions } from './actions/question';
 import { fetchAllUsers } from './actions/users';
@@ -23,6 +24,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
+        <KommunicateChat />
         <AllRoutes />
       </Router>
     </div>
